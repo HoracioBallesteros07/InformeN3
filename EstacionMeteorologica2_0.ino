@@ -103,7 +103,7 @@ void loop() {
   mq5Value = analogRead(mq5Pin);
 
   // Activar buzzer si nivel de gas es alto
-  if (mq5Value > 200) {
+  if (mq5Value > 900) {
     digitalWrite(BUZZER_PIN, HIGH);
   } else {
     digitalWrite(BUZZER_PIN, LOW);
